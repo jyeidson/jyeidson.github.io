@@ -95,6 +95,7 @@ function setNextQuestion() {
         console.log(containers);
         for (var container of containers) {
             container.classList.remove('show-active');
+            
         }
     }
     

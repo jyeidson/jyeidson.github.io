@@ -14,20 +14,9 @@ body {
     display: none;
     }
 
-    
-
     .show-active {
     display: block;
     animation: fade 1s;
-    }
-
-    .footer-container {
-    background-color: green;
-    display: block;
-    }
-
-    .footer-container.button {
-      display: inline;
     }
 
     .radio-group {
