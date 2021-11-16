@@ -15,19 +15,15 @@ var inputs = document.getElementsByTagName("input");
 // check if number of radios selected is correct
 function atLeastOneRadio() {
     var isChecked = 0;
-    var groups = document.getElementsByTagName('input');
+    var groups = document.getElementById(`question${activeQuestionNum}`).getElementsByTagName('input');
         for (var group of groups) {
             if (group.checked) {
             isChecked++;
                 } 
             }
-    if (isChecked >= viewCount){
+    if (isChecked >= 1){
         return true;
-    } else if (isChecked > activeQuestionNum) {
-        return alert("Too many answers selected. Pick One.");
-        return false;
-    }
-    else {
+    } else {
         alert("nothing is checked");
         return false;
     }
@@ -38,7 +34,9 @@ function atLeastOneRadio() {
  // function to remove show-active class & add to next
 function setNextQuestion() {
 
-    if (atLeastOneRadio()) {} else {return};
+    if (!atLeastOneRadio()) {
+        return;
+    };
     
     
     // remove show-active class from all question containers
@@ -48,8 +46,8 @@ function setNextQuestion() {
      }
     
     // set active question to next num
-    activeQuestionNum += 1;
-    viewCount += 1;
+    activeQuestionNum++;
+    viewCount++;
 
     // if final question then change title to Results and calculate score
     if (activeQuestionNum === 5) {
@@ -75,11 +73,31 @@ function setNextQuestion() {
     // document.getElementById("question-num").innerText = `Question ${activeQuestionNum} of 4`;
 
     // print to check show-active class added
-    console.log(document.getElementById(`question${activeQuestionNum}`).classList);
+    // console.log(document.getElementById(`question${activeQuestionNum}`).classList);
 
     
     document.getElementById("total").innerText = `Total Score: ${count}/4`;
-
+    
+    
+    // showing both buttons after question 1
+    if (activeQuestionNum > 1) {
+        var containers = document.getElementsByTagName('button');
+        console.log(containers);
+        for (var container of containers) {
+            container.classList.add('show-active');
+            console.log(container.classList);
+        }
+        
+    }
+    // hiding both buttons on results
+    if (activeQuestionNum === 5) {
+        var containers = document.getElementsByTagName('button');
+        console.log(containers);
+        for (var container of containers) {
+            container.classList.remove('show-active');
+        }
+    }
+    
  }
 
  // event listener for to call nextQuestion function when click next button
@@ -103,8 +121,8 @@ function setNextQuestion() {
      }
 
     // set active question variable to previous num
-    activeQuestionNum -= 1;
-    viewCount -= 1;
+    activeQuestionNum--;
+    viewCount--;
 
     // add show-active class to activeQuestionNum container
     var getEl = document.getElementById(`question${activeQuestionNum}`).classList;
@@ -122,3 +140,5 @@ function setNextQuestion() {
   for (var butt of previousButtons) {
       butt.addEventListener('click',setPreviousQuestion);
   }
+
+

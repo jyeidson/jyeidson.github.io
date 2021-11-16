@@ -6,61 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <link href="index27.css" rel="stylesheet">
 <style>
-        body {
-    font-family: Open Sans;
-    }
 
-    .container {
-            width: 80%;
-            height: 50%;
-            border: 0px solid grey;
-            margin: 0 auto;
-        }
-
-    .question-container {
-    
-    display: none;
-    }
-
-    .show-active {
-    display: block;
-    animation: fade 1s;
-    }
-
-    .footer-container {
-    background-color: green;
-    display: block;
-    }
-    .radio-group {
-        background-color: #F1F1F1;
-        margin: 2px;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 10px; 
-    }
-
-    .radio-group:hover {
-        background-color: darkgrey;
-    }
-    button {
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   color: #FFFFFF;
-   font-family: Open Sans;
-   font-size: 16px;
-   font-weight: 100;
-   margin-top: 12px;
-   padding: 8px 25px;
-   background-color: #4CAF50;
-   border: solid #FFFFFF 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
-}
 </style>
 </head>
 <body>
@@ -71,274 +19,113 @@
         </div>
         <div class="question-container show-active" id="question1">
             <div class="question-header">
-                
-        
             <h4>What does CSS stand for?</h4>
             </div>
             <div class="question-body">
                 <form>
                     <div class="radio-group">
-                    <input type="radio" id="answer1" value="true" onmousedown="this.tag = this.checked;" onclick="this.checked = !this.tag;">
-                    <label for="answer1">Cascading Style Sheets</label>
+                      <input type="radio" id="q1a" name="q1" value="true" onmousedown="this.tag = this.checked;" onclick="this.checked = !this.tag;">
+                      <label for="q1a">Cascading Style Sheets</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer2">
-                    <label for="answer2">Computer Style Sheets</label>
+                      <input type="radio" id="q1b" name="q1">
+                      <label for="q1b">Computer Style Sheets</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer3">
-                    <label for="answer3">Colorful Style Sheets</label>
+                      <input type="radio" id="q1c" name="q1">
+                      <label for="q1c">Colorful Style Sheets</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer4">
-                    <label for="answer4">Creative Style Sheets</label>
+                      <input type="radio" id="q1d" name="q1">
+                      <label for="q1d">Creative Style Sheets</label>
                     </div>
                 </form>
             </div>
-            <div class="question-footer">
-                
-                <button class="next show-next" id='next'>Next</button>
-            </div>
         </div>
-
         <div class="question-container" id="question2">
             <div class="question-header">
-               
-        
             <h4>Which of the following is not a real eCommerce platform?</h4>
             </div>
             <div class="question-body">
                 <form>
                     <div class="radio-group">
-                    <input type="radio" id="answer1">
-                    <label for="answer1">Shopify</label>
+                      <input type="radio" id="q2a" name="q2">
+                      <label for="q2a">Shopify</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer2">
-                    <label for="answer2">WooCommerce</label>
+                      <input type="radio" id="q2b" name="q2">
+                      <label for="q2b">WooCommerce</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer3" value="true">
-                    <label for="answer3">ShopCommerce</label>
+                      <input type="radio" id="q2c" name="q2" value="true">
+                      <label for="q2c">ShopCommerce</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" id="answer4">
-                    <label for="answer4">BigCommerce</label>
+                      <input type="radio" id="q2d" name="q2">
+                      <label for="q2d">BigCommerce</label>
                     </div>
                 </form>
             </div>
-            <div class="question-footer">
-                <button class="previous" id="previous">Previous</button>
-                <button class="next show-next" id='next'>Next</button>
-            </div>
         </div>
-        
         <div class="question-container" id="question3">
             <div class="question-header">
-        
                 <h4>If Shopify is so good, why are Shopify developers necessary?</h4>
             </div>
             <div class="question-body">
                 <form>
                     <div class="radio-group">
-                    <input type="radio" >
-                    <label for="answer1">To save time on things like store setups and migrations</label>
+                      <input type="radio" id="q3a" name="q3">
+                      <label for="q3a">To save time on things like store setups and migrations</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" >
-                    <label for="answer2">To extend the limited design options and functionalities of themes with custom code</label>
+                      <input type="radio" id="q3b" name="q3">
+                      <label for="q3b">To extend the limited design options and functionalities of themes with custom code</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" >
-                    <label for="answer3">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+                      <input type="radio" id="q3c" name="q3">
+                      <label for="q3c">To provide support with a deep understanding of how the platform works and what its limitations are</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio"  value="true">
-                    <label for="answer4">All the above</label>
+                      <input type="radio" id="q3d" name="q3" value="true">
+                      <label for="q3d">All the above</label>
                     </div>
                 </form>
-            </div>
-            <div class="question-footer">
-                <button class="previous" id="previous">Previous</button>
-                <button class="next show-next" id='next'>Next</button>
-            </div>
+            </div>  
         </div>
-
         <div class="question-container" id="question4">
             <div class="question-header">
-                
-        
                 <h4>Which of the following is true about Shopify developers?</h4>
             </div>
             <div class="question-body">
                 <form>
                     <div class="radio-group">
-                    <input type="radio" >
-                    <label for="answer1">They are paid extremely well</label>
+                      <input type="radio" id="q4a" name="q4">
+                      <label for="q4a">They are paid extremely well</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" >
-                    <label for="answer2">There is a high demand for them</label>
+                      <input type="radio" id="q4b" name="q4">
+                      <label for="q4b">There is a high demand for them</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio" >
-                    <label for="answer3">They need to know web development, the platform itself, and the liquid template language</label>
+                      <input type="radio" id="q4c" name="q4">
+                      <label for="q4c">They need to know web development, the platform itself, and the liquid template language</label>
                     </div>
                     <div class="radio-group"> 
-                    <input type="radio"  value="true">
-                    <label for="answer4">All the above</label>
+                      <input type="radio" id="q4d" name="q4" value="true">
+                      <label for="q4d">All the above</label>
                     </div>
                 </form>
             </div>
-            <div class="question-footer">
-                <button class="previous" id="previous">Previous</button>
-                <button class="next" id='next'>Next</button>
-            </div>
-        </div>
-
+          </div>
         <div class="question-container" id="question5">
             <div class="question-header">
-                
-        
                 <h4 id="total">Total Score:</h4>
             </div>
-            
-            
-            <div class="question-footer">
-                
-
-            </div>
         </div>
-<!-- 
-    <div class="question-container show-active" id="Q1">
-        <div class="header">
-          <h1>CSS Quiz</h1>
-    
-          <h2>Question 1 of 4</h2>
-    
-          <h4>What does CSS stand for?</h4>
-        </div>
-        <div class="question-body">
-          <form>
-            <div class="radio-group">
-              <input type="radio" id="answer1">
-              <label for="answer1">Cascading Style Sheets</label
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer2">
-              <label for="answer2">Computer Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer3">
-              <label for="answer3">Colorful Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer4">
-              <label for="answer4">Creative Style Sheets</label>
-            </div>
-          </form>
-        
-        </div>
-        <div class="footer-container">
+        <div class="question-footer show-active">
           <button class="previous" id="previous">Previous</button>
-          <button class="next show-next" id='next'>Next</button>
-        </div>
-    
-    <div>
-    <div class="question-container" id="Q2">
-        <div class="header">
-          <h1>CSS Quiz</h1>
-    
-          <h2>Question 2 of 4</h2>
-    
-          <h4>What does CSS stand for?</h4>
-        </div>
-        <div class="question-body">
-          <form>
-            <div class="radio-group">
-              <input type="radio" id="answer1">
-              <label for="answer1">Cascading Style Sheets</label
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer2">
-              <label for="answer2">Computer Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer3">
-              <label for="answer3">Colorful Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer4">
-              <label for="answer4">Creative Style Sheets</label>
-            </div>
-          </form>
-        
-        </div>
-    
-    </div>
-          
-    <div class="question-container" id="Q3">
-        <div class="header">
-          <h1>CSS Quiz</h1>
-    
-          <h2>Question 3 of 4</h2>
-    
-          <h4>What does CSS stand for?</h4>
-        </div>
-        <div class="question-body">
-          <form>
-            <div class="radio-group">
-              <input type="radio" id="answer1">
-              <label for="answer1">Cascading Style Sheets</label
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer2">
-              <label for="answer2">Computer Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer3">
-              <label for="answer3">Colorful Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer4">
-              <label for="answer4">Creative Style Sheets</label>
-            </div>
-          </form>
-        
-        </div>
-    </div>
-          
-    <div class="question-container" id="Q4">
-        <div class="header">
-          <h1>CSS Quiz</h1>
-    
-          <h2>Question 4 of 4</h2>
-    
-          <h4>What does CSS stand for?</h4>
-        </div>
-        <div class="question-body">
-          <form>
-            <div class="radio-group">
-              <input type="radio" id="answer1">
-              <label for="answer1">Cascading Style Sheets</label
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer2">
-              <label for="answer2">Computer Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer3">
-              <label for="answer3">Colorful Style Sheets</label>
-            </div>
-            <div class="radio-group"> 
-              <input type="radio" id="answer4">
-              <label for="answer4">Creative Style Sheets</label>
-            </div>
-          </form>
-        
-        </div>
-    </div> -->
-      
+          <button class="next show-active" id='next'>Next</button>
+      </div>
     </div>   
     <script src="index27.js">
         
