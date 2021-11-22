@@ -1,0 +1,218 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+body {
+    display: flex;
+}
+
+.nav-bar {
+    width: 10%;
+    border: 1px solid #f1f1f1;
+    border-right: none;
+}
+
+.content {
+    border: 1px solid #f1f1f1;
+    height: auto;
+    width: 600px;
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header-container h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.back-btn  {
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.back-btn a:hover {
+    opacity: .7;
+}
+
+.photo-container {
+    height: 200px;   
+     
+}
+
+.hero-image { 
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+
+.details-container {
+    padding: 12px 16px 0px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    
+}
+
+.details-header > a > img {
+    height: 133px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -50%;
+    border: 4px solid white;
+}
+
+.follow-btn {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 4px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.username {
+    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 25px 0px 4px 0px;
+}
+
+.details-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.twitter-handle  {
+    margin-bottom: 12px;
+    color: rgb(83, 100, 113);
+}
+
+.joined-date {
+    color: rgb(83, 100, 113);
+    margin-bottom: 12px;
+}
+
+
+#followingCount {
+    padding-right: 10px;
+    color: rgb(83, 100, 113);
+}
+
+#followerCount {
+    padding-right: 10px;
+    color: rgb(83, 100, 113);
+}
+
+.tweets-container  {
+    
+}
+
+.tweet-container {
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    border-top: 1px solid #f1f1f1;
+    padding: 16px;
+}
+
+.tweet-container a:hover, .tweet-container a:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tweet-container .tweet-name {
+    font-weight: 500;
+}
+
+.tweet-container .tweet-handle {   
+    color: rgb(48, 104, 146);
+}
+
+.tweet-container .tweet-date {   
+    color: rgb(48, 104, 146);
+}
+
+.avatar > img {
+    width: 48px;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+.tweet-content {
+    width: 90%;
+}
+
+.timeline {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.timeline-header {
+    padding: 12px;
+    
+}
+
+.timeline-container {
+    width: 90%;
+    border-right:   1px solid #f1f1f1;
+    border-bottom:   1px solid #f1f1f1;
+    border-left:   1px solid #f1f1f1;
+}
+
+.timeline-container a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tweet-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.fade-in {
+	animation: fadeIn .5s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
