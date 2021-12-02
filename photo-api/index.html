@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class ="container">
+        <div class='header-container hero'>
+                <div class='logo'>
+                    <a href="https://www.pexels.com">
+                        <img id='logo' src="https://images.pexels.com/lib/api/pexels-white.png" />
+                    </a>
+                </div>
+                <div class='header-text'>
+                    <h1>The best free stock photos, royalty, free images & videos shared by creators.</h1>
+                    <div id="Home" class="search-bar show-active">
+                        <form id="search-form-photos">
+                            <input id="search-bar-photos" placeholder="Search for free photos and videos" type="text">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div id="Discover" class="search-bar">
+                    </div>
+                    <div id="Videos" class="search-bar">
+                        <form id="search-form-videos">
+                            <input id="search-bar-videos" placeholder="Search for free videos" type="text">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class='header-photo-cred'>
+                    <a href="https://www.pexels.com/photo/monochrome-photo-of-waves-1981043/">Photo by Matt Hardy from Pexels</a>
+                </div>
+        </div>
+        
+        <div class ="selector">
+            <div class= "tab tab-active">
+                Home
+            </div>
+            <div class= "tab">
+                Discover
+            </div>
+            <div class= "tab">
+                Videos
+            </div>
+        </div>
+        <div class="content">
+            <div id="content-divs">
+                <div id="col1"></div>
+                <div id="col2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='index.js'>
+    
+</script>
+</html>
